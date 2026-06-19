@@ -1,8 +1,8 @@
 ## Traduções para as expressões regulares
 
-**Meta caracteres Padrão*
+*Meta caracteres Padrão*
 - . ? * + ^ $ | [ ] { } ( ) \
-
+---
 - [...] Lista
 - [^...] Lista Negada
 - ? Opcional
@@ -13,13 +13,13 @@
 - \ Escapar algo (literalmente)
 - \1 ... \9 Texto casado nos grupo 1...9
 
-**Âncoras*
+*Âncoras*
 
-^ Início da Linha
+**^ Início da Linha**
 $ Fim da linha
 \b Início ou fim da palavra (borda)
 
-**Nomes de arquivos*
+*Nomes de arquivos*
 
 *.txt, nome-??.jpg  não são expressões relagulares
 São curingas de nomes de arquivos, e apesar de serem parecidos
@@ -31,19 +31,19 @@ Exemplo:
 n[aã]o -> não e nao
 [0123456789] ou [0-9]
 
-** Outros modelos agrupadores:*
+*Outros modelos agrupadores:*
 [a-z] [A-Z] [A-Za-z] [A-Za-z0-9]
 
-** Hexadecimais:*
+*Hexadecimais:*
 [0-9A-Fa-f]
 
-** Pontuações, espaço e tab e caracteres e branco:*
+*Pontuações, espaço e tab e caracteres e branco:*
 [.,!?:...] [ \t] [ \t\n\r\f\v]
 
-** Caracteres imprimiveis*
+*Caracteres imprimiveis*
 [^ \t\n\r\f\v]
 
-** Caracteres imprimiveis e o espaço*
+*Caracteres imprimiveis e o espaço*
 [^\t\n\r\f\v]
 
 | Quantificador | Significado | Exemplo |
@@ -57,10 +57,10 @@ n[aã]o -> não e nao
 | {n,} | pelo menos n vezes | `a{3,}` |
 | {n,m} | entre n e m vezes | `\d{2,4}` |
 
-** somar expressões e o opcional*
+*somar expressões e o opcional*
 [\d]+[^\d]2343423432sadadsds
 
-** totalizadores*
+*totalizadores*
 7{2} 77 ou \d{2,4} de 2 a 4 dígitos
 ^ fora do EA representa começa com
 $ fora do EA representa termina com
