@@ -45,16 +45,16 @@
 *Caracteres imprimiveis e o espaço*
 <p>[^\t\n\r\f\v]</p>
 
-| Quantificador | Significado | Exemplo |
-|---------------|-------------|----------|
-| . | qualquer caractere | `a.c` |
-| ? | opcional | `https?` |
-| * | zero ou mais vezes | `a*` |
-| + | uma ou mais vezes | `a+` |
-| \| | alternância | `gato\|cachorro` |
-| {n} | exatamente n vezes | `\d{4}` |
-| {n,} | pelo menos n vezes | `a{3,}` |
-| {n,m} | entre n e m vezes | `\d{2,4}` |
+| Quantificador | Significado | Exemplo | Resultado |
+|---------------|-------------|---------|-----------|
+| `.` | Qualquer caractere | `a.c` | `abc`, `a1c`, `a@c`, `a-c` |
+| `?` | Zero ou uma vez (opcional) | `https?` | `http`, `https` |
+| `*` | Zero ou mais vezes | `a*` | `""`, `a`, `aa`, `aaa` |
+| `+` | Uma ou mais vezes | `a+` | `a`, `aa`, `aaa`, `aaaa` |
+| `\|` | Alternância (OU) | `gato\|cachorro` | `gato`, `cachorro` |
+| `{n}` | Exatamente `n` vezes | `\d{4}` | `1234` |
+| `{n,}` | Pelo menos `n` vezes | `a{3,}` | `aaa`, `aaaa`, `aaaaa` |
+| `{n,m}` | Entre `n` e `m` vezes | `\d{2,4}` | `12`, `123`, `1234` |
 
 **Somar expressões e o opcional**
 <p>[\d]+[^\d]2343423432sadadsds</p>
