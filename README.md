@@ -1,19 +1,18 @@
-**Traduções para as expressões regulares*
+## Traduções para Expressões Regulares
 
----
 
-**Meta caracteres Padrão*
-- . ? * + ^ $ | [ ] { } ( ) \
+## Meta caracteres Padrão*
+# . ? * + ^ $ | [ ] { } ( ) \
 
-- [...] Lista
-- [^...] Lista Negada
-- ? Opcional
-- () Grupo
-- | Ou
-- \+ E
-- n,m de n até m
-- \ Escapar algo (literalmente)
-- \1 ... \9 Texto casado nos grupo 1...9
+# [...] Lista
+# [^...] Lista Negada
+# ? Opcional
+# () Grupo
+# | Ou
+# \+ E
+# n,m de n até m
+# \ Escapar algo (literalmente)
+# \1 ... \9 Texto casado nos grupo 1...9
 
 **Âncoras*
 
@@ -48,16 +47,16 @@
 - Caracteres imprimiveis e o espaço
 - [^\t\n\r\f\v]
 
-- Quantificador	Significado	Exemplo
-- 
-- .	        qualquer    	        a.c -> aec ou abc
-- +	        1 ou mais vezes	        a+c -> aaaacccc ou aacc
-- ?	        opcional      	        https? (http ou https)
-- *         tudo ou nada	        a* -> "" ou "a" ou "aaaaaaaaaaaaa"
-- |         Ou uma coisa ou outra   gato|cachorro -> Ou gato ou cachorro
-- {n}       Exatamente n vezes	    \d{4}
-- {n,}	    Pelo menos n vezes	    a{3,}
-- {n,m}	    Entre n e m vezes	    \d{2,4}
+| Quantificador | Significado | Exemplo |
+|---------------|-------------|----------|
+| . | qualquer caractere | `a.c` |
+| ? | opcional | `https?` |
+| * | zero ou mais vezes | `a*` |
+| + | uma ou mais vezes | `a+` |
+| \| | alternância | `gato\|cachorro` |
+| {n} | exatamente n vezes | `\d{4}` |
+| {n,} | pelo menos n vezes | `a{3,}` |
+| {n,m} | entre n e m vezes | `\d{2,4}` |
 
 - somar expressões e o opcional
 - [\d]+[^\d]2343423432sadadsds
