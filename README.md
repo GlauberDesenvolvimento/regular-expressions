@@ -56,7 +56,7 @@
 | {n,} | pelo menos n vezes | `a{3,}` |
 | {n,m} | entre n e m vezes | `\d{2,4}` |
 
-*somar expressões e o opcional*
+#somar expressões e o opcional#
 <p>[\d]+[^\d]2343423432sadadsds</p>
 
 *totalizadores*
