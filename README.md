@@ -1,6 +1,6 @@
 ## Traduções para as expressões regulares
 
-*Meta caracteres Padrão*
+**Meta caracteres Padrão**
 - . ? * + ^ $ | [ ] { } ( ) \
 ---
 - [...] Lista
@@ -26,11 +26,11 @@
 
 <p>Lista exigênte: [aeiou] -<p>Somente vogais</p>
 
-<p>Exemplo:</p>
+*Exemplo:*
 <p>n[aã]o -<p>não e nao</p>
 <p>[0123456789] ou [0-9]</p>
 
-*Outros modelos agrupadores:*
+**Outros modelos agrupadores:**
 <p>[a-z] [A-Z] [A-Za-z] [A-Za-z0-9]</p>
 
 *Hexadecimais:*
