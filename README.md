@@ -15,36 +15,35 @@
 
 *Âncoras*
 
-> ^ Início da Linha
-> $ Fim da linha
-> \b Início ou fim da palavra (borda)
+<p>^ Início da Linha</p>
+<p>$ Fim da linha</p>
+<p>\b Início ou fim da palavra (borda)</p>
 
 *Nomes de arquivos*
 
-> *.txt, nome-??.jpg  não são expressões relagulares
-> São curingas de nomes de arquivos, e apesar de serem parecidos
-> São usados apenas para nomeação de arquivos
+<p>*.txt, nome-??.jpg  não são expressões relagulares</p>
+> São curingas de nomes de arquivos, e apesar de serem parecidos e São usados apenas para nomeação de arquivos
 
-> Lista exigênte: [aeiou] -> Somente vogais
+<p>Lista exigênte: [aeiou] -<p>Somente vogais</p>
 
-> Exemplo:
-> n[aã]o -> não e nao
-> [0123456789] ou [0-9]
+<p>Exemplo:</p>
+<p>n[aã]o -<p>não e nao</p>
+<p>[0123456789] ou [0-9]</p>
 
 *Outros modelos agrupadores:*
-> [a-z] [A-Z] [A-Za-z] [A-Za-z0-9]
+<p>[a-z] [A-Z] [A-Za-z] [A-Za-z0-9]</p>
 
 *Hexadecimais:*
-> [0-9A-Fa-f]
+<p>[0-9A-Fa-f]</p>
 
 *Pontuações, espaço e tab e caracteres e branco:*
-> [.,!?:...] [ \t] [ \t\n\r\f\v]
+<p>[.,!?:...] [ \t] [ \t\n\r\f\v]</p>
 
 *Caracteres imprimiveis*
-> [^ \t\n\r\f\v]
+<p>[^ \t\n\r\f\v]</p>
 
 *Caracteres imprimiveis e o espaço*
-> [^\t\n\r\f\v]
+<p>[^\t\n\r\f\v]</p>
 
 | Quantificador | Significado | Exemplo |
 |---------------|-------------|----------|
@@ -58,9 +57,8 @@
 | {n,m} | entre n e m vezes | `\d{2,4}` |
 
 *somar expressões e o opcional*
-> [\d]+[^\d]2343423432sadadsds
+<p>[\d]+[^\d]2343423432sadadsds</p>
 
 *totalizadores*
-> 7{2} 77 ou \d{2,4} de 2 a 4 dígitos
-> ^ fora do EA representa começa com
-> $ fora do EA representa termina com
+<p>7{2} 77 ou \d{2,4} de 2 a 4 dígitos</p>
+> ^ fora do EA representa começa com... $ fora do EA representa termina com...
