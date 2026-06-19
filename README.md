@@ -59,6 +59,6 @@
 **Somar expressões e o opcional**
 <p>[\d]+[^\d]2343423432sadadsds</p>
 
-*totalizadores*
+*Totalizadores*
 <p>7{2} 77 ou \d{2,4} de 2 a 4 dígitos</p>
 > ^ fora do EA representa começa com... $ fora do EA representa termina com...
